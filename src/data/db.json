@@ -1,0 +1,68 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Administrador",
+      "email": "admin@sena.edu.co",
+      "password": "admin123",
+      "createdAt": "2026-01-01T09:00:00Z"
+    }
+  ],
+  "areas": [
+    { "id": 1, "name": "Tecnología", "createdAt": "2026-01-15T10:00:00Z" },
+    { "id": 2, "name": "Salud", "createdAt": "2026-02-10T10:00:00Z" },
+    { "id": 3, "name": "Industria Alimentaria", "createdAt": "2026-03-05T10:00:00Z" }
+  ],
+  "trainingCenters": [
+    { "id": 1, "name": "SENA Bogotá Centro", "location": "Carrera 30 #17-67, Bogotá", "createdAt": "2026-01-15T10:00:00Z" },
+    { "id": 2, "name": "SENA Soacha", "location": "Carrera 4 #44-50, Soacha", "createdAt": "2026-02-20T10:00:00Z" }
+  ],
+  "teachers": [
+    { "id": 1, "name": "Carlos Ramírez", "location": "Sede Norte", "areaId": 1, "trainingCenterId": 1, "createdAt": "2026-01-20T10:00:00Z" },
+    { "id": 2, "name": "María López", "location": "Sede Centro", "areaId": 2, "trainingCenterId": 1, "createdAt": "2026-02-10T10:00:00Z" }
+  ],
+  "computers": [
+    { "id": 1, "number": 101, "brand": "HP", "createdAt": "2026-01-15T10:00:00Z" },
+    { "id": 2, "number": 102, "brand": "Lenovo", "createdAt": "2026-02-10T10:00:00Z" },
+    { "id": 3, "number": 103, "brand": "Dell", "createdAt": "2026-03-01T10:00:00Z" }
+  ],
+  "courses": [
+    { "id": 1, "courseNumber": "ADSO-2846255", "day": "Lunes a Viernes", "areaId": 1, "trainingCenterId": 1, "createdAt": "2026-01-15T10:00:00Z" },
+    { "id": 2, "courseNumber": "ADSO-2846256", "day": "Lunes a Miércoles", "areaId": 1, "trainingCenterId": 2, "createdAt": "2026-03-10T10:00:00Z" }
+  ],
+  "apprentices": [
+    { "id": 1, "name": "Juan Pérez", "email": "juan@mail.com", "number": 3001234567, "courseId": 1, "computerId": 1, "createdAt": "2026-02-01T10:00:00Z" },
+    { "id": 2, "name": "Ana García", "email": "ana@mail.com", "number": 3009876543, "courseId": 1, "computerId": 2, "createdAt": "2026-02-15T10:00:00Z" }
+  ],
+  "courseTeachers": [
+    { "id": 1, "courseId": 1, "teacherId": 1, "createdAt": "2026-02-01T10:00:00Z" },
+    { "id": 2, "courseId": 1, "teacherId": 2, "createdAt": "2026-03-01T10:00:00Z" }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "title": "Inicio del nuevo periodo de formación",
+      "content": "El SENA inicia el nuevo periodo de formación con nuevas oportunidades para los aprendices.",
+      "imageUrl": "",
+      "videoUrl": "",
+      "videoPath": "",
+      "createdAt": "2026-08-20T10:00:00Z"
+    }
+  ],
+  "senaInfos": [
+    {
+      "id": 1,
+      "title": "Misión del SENA",
+      "description": "El SENA está encargado de cumplir la función que le corresponde al Estado de invertir en el desarrollo social y técnico de los trabajadores colombianos.",
+      "image": "",
+      "createdAt": "2026-09-01T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "title": "Visión del SENA",
+      "description": "En el 2026 el SENA será una organización de conocimiento innovadora, presente en el territorio y las empresas, que impulsa la competitividad, la innovación y el talento humano.",
+      "image": "",
+      "createdAt": "2026-09-02T10:00:00Z"
+    }
+  ]
+}
