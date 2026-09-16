@@ -1,3 +1,5 @@
+// esto sirve para definir la URL base de la API y funciones auxiliares para formatear fechas y generar extractos de texto.
+
 export const API_URL = 'http://localhost:3001';
 
 export function formatDate(iso) {

@@ -3,9 +3,6 @@ import { Link, useParams } from 'react-router-dom';
 import { useAuth } from '../../context/useAuth';
 import { API_URL, formatDate } from '../../utils/helpers';
 
-
-
-
 export default function SenaInfoShow() {
   const { id } = useParams();
   const { user } = useAuth();

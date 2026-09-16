@@ -1,9 +1,8 @@
+// esto sirve para crear un componente de perfil de usuario en React, donde se muestra la información del usuario autenticado y el número de aprendices registrados en la plataforma.
+
 import { useState, useEffect } from 'react';
 import { useAuth } from '../../context/useAuth';
 import { API_URL, formatDate } from '../../utils/helpers';
-
-
-
 
 export default function Profile() {
   const { user } = useAuth();

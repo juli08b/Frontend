@@ -3,9 +3,6 @@ import { Link, useParams } from 'react-router-dom';
 import DetailRow from '../../components/DetailRow';
 import { API_URL, formatDate } from '../../utils/helpers';
 
-
-
-
 export default function ApprenticesShow() {
   const { id } = useParams();
   const [apprentice, setApprentice] = useState(null);

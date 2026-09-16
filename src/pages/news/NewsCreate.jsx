@@ -2,8 +2,6 @@ import { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { API_URL } from '../../utils/helpers';
 
-
-
 export default function NewsCreate() {
   const location = useLocation();
   const navigate = useNavigate();
@@ -19,6 +17,7 @@ export default function NewsCreate() {
   const [loading, setLoading] = useState(isEditing);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState(null);
+  const [imageError, setImageError] = useState(false);
   const [fieldErrors, setFieldErrors] = useState({});
 
   useEffect(() => {
@@ -33,6 +32,7 @@ export default function NewsCreate() {
           setTitle(data.title || '');
           setContent(data.content || '');
           setImageUrl(data.imageUrl || '');
+          setImageError(false);
           setVideoUrl(data.videoUrl || '');
         }
       } catch {
@@ -146,9 +146,30 @@ export default function NewsCreate() {
                   type="text"
                   className="form-input"
                   value={imageUrl}
-                  onChange={(e) => setImageUrl(e.target.value)}
+                    onChange={(e) => {
+                      setImageUrl(e.target.value);
+                      setImageError(false);
+                    }}
                   placeholder="https://ejemplo.com/imagen.jpg"
                 />
+                  <span className="form-hint">
+                    Usa la dirección directa de la imagen, no la URL de la página
+                    de Google, Pinterest o Instagram.
+                  </span>
+                  {imageUrl.trim() && !imageError && (
+                    <img
+                      src={imageUrl.trim()}
+                      alt="Vista previa de la noticia"
+                      className="image-url-preview"
+                      onError={() => setImageError(true)}
+                    />
+                  )}
+                  {imageError && (
+                    <span className="form-error">
+                      Esta URL no apunta a una imagen accesible. Copia la opción
+                      “Copiar dirección de imagen” desde el navegador.
+                    </span>
+                  )}
               </div>
 
               <div className="form-group">

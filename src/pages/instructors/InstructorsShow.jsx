@@ -3,9 +3,6 @@ import { Link, useParams } from 'react-router-dom';
 import DetailRow from '../../components/DetailRow';
 import { API_URL, formatDate } from '../../utils/helpers';
 
-
-
-
 export default function InstructorsShow() {
   const { id } = useParams();
   const [teacher, setTeacher] = useState(null);

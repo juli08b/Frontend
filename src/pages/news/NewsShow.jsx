@@ -2,9 +2,6 @@ import { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { API_URL, formatDate } from '../../utils/helpers';
 
-
-
-
 function extractYouTubeId(url) {
   const match = url.match(
     /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/|youtube\.com\/shorts\/)([A-Za-z0-9_-]{6,})/
@@ -117,7 +114,7 @@ export default function NewsShow() {
               alt={item.title}
               className="news-show-image"
               onError={(e) => {
-                e.currentTarget.style.display = 'none';
+                e.currentTarget.src = '/images/sena1.jpg';
               }}
             />
           )}

@@ -3,9 +3,6 @@ import { Link, useParams } from 'react-router-dom';
 import DetailRow from '../../components/DetailRow';
 import { API_URL, formatDate } from '../../utils/helpers';
 
-
-
-
 export default function TrainingCentersShow() {
   const { id } = useParams();
   const [center, setCenter] = useState(null);

@@ -1,3 +1,4 @@
+// esto sirve para crear una tabla reutilizable en React, donde se pueden pasar las columnas y filas como props, y también se puede especificar una clave para cada fila y acciones opcionales para cada fila.
 export default function DataTable({ columns, rows, rowKey = 'id', actions }) {
   return (
     <div className="table-wrapper">

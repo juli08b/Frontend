@@ -1,3 +1,5 @@
+//esto sirve para crear un componente de noticias en React, donde se pueden listar, crear, editar y eliminar noticias institucionales del SENA.
+
 import { useNavigate } from 'react-router-dom';
 import Header from '../../components/reusable/Header';
 import DataTable from '../../components/reusable/DataTable';

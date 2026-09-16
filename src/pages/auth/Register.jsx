@@ -12,7 +12,7 @@ export default function Register() {
   const [passwordConfirmation, setPasswordConfirmation] = useState('');
   const [errors, setErrors] = useState({});
 
-  const from = location.state?.from?.pathname || '/profile';
+  const from = location.state?.from?.pathname || '/dashboard';
 
   const validate = () => {
     const next = {};

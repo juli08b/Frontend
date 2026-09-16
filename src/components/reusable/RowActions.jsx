@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 
+// sirve para crear un componente de acciones para cada fila de una tabla, donde se pueden ver, editar o eliminar los elementos de la tabla. 
 export default function RowActions({ entity, basePath, onDelete }) {
   return (
     <>

@@ -1,3 +1,5 @@
+// esto srive para crear un hook personalizado en React que permite manejar una colección de datos desde una API, incluyendo la carga, eliminación y manejo de errores.
+
 import { useState, useEffect, useCallback } from 'react';
 import { API_URL } from '../utils/helpers';
 

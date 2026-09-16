@@ -15,7 +15,7 @@ export default function Login() {
   const [password, setPassword] = useState(demoCredentials.password);
   const [error, setError] = useState(null);
 
-  const from = location.state?.from?.pathname || '/profile';
+  const from = location.state?.from?.pathname || '/dashboard';
 
   const handleSubmit = async (e) => {
     e.preventDefault();

@@ -2,8 +2,6 @@ import { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { API_URL } from '../../utils/helpers';
 
-
-
 export default function TrainingCentersCreate() {
   const location = useLocation();
   const navigate = useNavigate();

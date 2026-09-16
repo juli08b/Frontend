@@ -1,7 +1,10 @@
+// esto sirve para crear un servidor JSON con autenticación simulada, donde se pueden registrar, iniciar sesión y cerrar sesión usuarios, así como obtener el perfil del usuario autenticado.
+
 import jsonServer from 'json-server';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
+// hacemos un const para obtener la ruta del directorio actual, ya que estamos usando módulos ES6 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const server = jsonServer.create();

@@ -6,47 +6,163 @@
       "email": "admin@sena.edu.co",
       "password": "admin123",
       "createdAt": "2026-01-01T09:00:00Z"
+    },
+    {
+      "id": "[object Object]1",
+      "name": "juliana",
+      "email": "juli@gmail.com",
+      "password": "123456..",
+      "createdAt": "2026-09-16T15:56:39.223Z"
     }
   ],
   "areas": [
-    { "id": 1, "name": "Tecnología", "createdAt": "2026-01-15T10:00:00Z" },
-    { "id": 2, "name": "Salud", "createdAt": "2026-02-10T10:00:00Z" },
-    { "id": 3, "name": "Industria Alimentaria", "createdAt": "2026-03-05T10:00:00Z" }
+    {
+      "id": 1,
+      "name": "Tecnología",
+      "createdAt": "2026-01-15T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Salud",
+      "createdAt": "2026-02-10T10:00:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Industria Alimentaria",
+      "createdAt": "2026-03-05T10:00:00Z"
+    }
   ],
   "trainingCenters": [
-    { "id": 1, "name": "SENA Bogotá Centro", "location": "Carrera 30 #17-67, Bogotá", "createdAt": "2026-01-15T10:00:00Z" },
-    { "id": 2, "name": "SENA Soacha", "location": "Carrera 4 #44-50, Soacha", "createdAt": "2026-02-20T10:00:00Z" }
+    {
+      "id": 1,
+      "name": "SENA Bogotá Centro",
+      "location": "Carrera 30 #17-67, Bogotá",
+      "createdAt": "2026-01-15T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "SENA Soacha",
+      "location": "Carrera 4 #44-50, Soacha",
+      "createdAt": "2026-02-20T10:00:00Z"
+    }
   ],
   "teachers": [
-    { "id": 1, "name": "Carlos Ramírez", "location": "Sede Norte", "areaId": 1, "trainingCenterId": 1, "createdAt": "2026-01-20T10:00:00Z" },
-    { "id": 2, "name": "María López", "location": "Sede Centro", "areaId": 2, "trainingCenterId": 1, "createdAt": "2026-02-10T10:00:00Z" }
+    {
+      "id": 1,
+      "name": "Carlos Ramírez",
+      "location": "Sede Norte",
+      "areaId": 1,
+      "trainingCenterId": 1,
+      "createdAt": "2026-01-20T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "María López",
+      "location": "Sede Centro",
+      "areaId": 2,
+      "trainingCenterId": 1,
+      "createdAt": "2026-02-10T10:00:00Z"
+    }
   ],
   "computers": [
-    { "id": 1, "number": 101, "brand": "HP", "createdAt": "2026-01-15T10:00:00Z" },
-    { "id": 2, "number": 102, "brand": "Lenovo", "createdAt": "2026-02-10T10:00:00Z" },
-    { "id": 3, "number": 103, "brand": "Dell", "createdAt": "2026-03-01T10:00:00Z" }
+    {
+      "id": 1,
+      "number": 101,
+      "brand": "HP",
+      "createdAt": "2026-01-15T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "number": 102,
+      "brand": "Lenovo",
+      "createdAt": "2026-02-10T10:00:00Z"
+    },
+    {
+      "id": 3,
+      "number": 103,
+      "brand": "Dell",
+      "createdAt": "2026-03-01T10:00:00Z"
+    }
   ],
   "courses": [
-    { "id": 1, "courseNumber": "ADSO-2846255", "day": "Lunes a Viernes", "areaId": 1, "trainingCenterId": 1, "createdAt": "2026-01-15T10:00:00Z" },
-    { "id": 2, "courseNumber": "ADSO-2846256", "day": "Lunes a Miércoles", "areaId": 1, "trainingCenterId": 2, "createdAt": "2026-03-10T10:00:00Z" }
+    {
+      "id": 1,
+      "courseNumber": "ADSO-2846255",
+      "day": "Lunes a Viernes",
+      "areaId": 1,
+      "trainingCenterId": 1,
+      "createdAt": "2026-01-15T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "courseNumber": "ADSO-2846256",
+      "day": "Lunes a Miércoles",
+      "areaId": 1,
+      "trainingCenterId": 2,
+      "createdAt": "2026-03-10T10:00:00Z"
+    }
   ],
   "apprentices": [
-    { "id": 1, "name": "Juan Pérez", "email": "juan@mail.com", "number": 3001234567, "courseId": 1, "computerId": 1, "createdAt": "2026-02-01T10:00:00Z" },
-    { "id": 2, "name": "Ana García", "email": "ana@mail.com", "number": 3009876543, "courseId": 1, "computerId": 2, "createdAt": "2026-02-15T10:00:00Z" }
+    {
+      "id": 2,
+      "name": "Ana García",
+      "email": "ana@mail.com",
+      "number": 3009876543,
+      "courseId": 1,
+      "computerId": 2,
+      "createdAt": "2026-02-15T10:00:00Z"
+    },
+    {
+      "name": "Carlos",
+      "email": "carlos@gmail.com",
+      "number": 3212022430,
+      "courseId": 1,
+      "computerId": 1,
+      "createdAt": "2026-09-16T16:24:53.606Z",
+      "id": 3
+    },
+    {
+      "name": "Software",
+      "email": "admin@sena.edu.co",
+      "number": 23456890655,
+      "courseId": 2,
+      "computerId": 2,
+      "createdAt": "2026-09-16T16:50:05.441Z",
+      "id": 4
+    }
   ],
   "courseTeachers": [
-    { "id": 1, "courseId": 1, "teacherId": 1, "createdAt": "2026-02-01T10:00:00Z" },
-    { "id": 2, "courseId": 1, "teacherId": 2, "createdAt": "2026-03-01T10:00:00Z" }
+    {
+      "id": 1,
+      "courseId": 1,
+      "teacherId": 1,
+      "createdAt": "2026-02-01T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "courseId": 1,
+      "teacherId": 2,
+      "createdAt": "2026-03-01T10:00:00Z"
+    }
   ],
   "news": [
     {
-      "id": 1,
       "title": "Inicio del nuevo periodo de formación",
       "content": "El SENA inicia el nuevo periodo de formación con nuevas oportunidades para los aprendices.",
-      "imageUrl": "",
+      "imageUrl": "https://www.sena.edu.co/api/cms/media/file/c27c0690-c367-4bbd-acff-2d132f704ec5.jpg",
       "videoUrl": "",
       "videoPath": "",
-      "createdAt": "2026-08-20T10:00:00Z"
+      "createdAt": "2026-09-16T15:22:13.970Z",
+      "id": 1
+    },
+    {
+      "title": "El Sena Forma Talentos",
+      "content": "El SENA (Servicio Nacional de Aprendizaje) se consolidad como el motor principal de la transformación social y productiva en Colombia al formar talentos con un enfoque integral y altamente pertinente para las exigencias del mercado laboral moderno. A través de su educación técnica, tecnológica y complementaria gratuita, la institución identifica, potencia y certifica las habilidades de millones de colombianos, conectando la pasión y el esfuerzo de cada aprendiz con oportunidades reales de empleo, emprendimiento e innovación. Así, más que impartir conocimientos académicos, el SENA forja profesionales íntegros, creativos y competitivos capaces de impulsar el desarrollo de las regiones y transformar vidas.",
+      "imageUrl": "https://www.sena.edu.co/",
+      "videoUrl": "https://www.youtube.com/watch?v=Hoz0JwSkqKk",
+      "videoPath": "",
+      "createdAt": "2026-09-16T15:17:18.382Z",
+      "id": 2
     }
   ],
   "senaInfos": [

@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../context/useAuth';
-import { API_URL, formatDate, excerpt } from '../../utils/helpers';
-
-
+import { API_URL } from '../../utils/helpers';
+import NewsPreviews from './NewsPreviews';
 
 const slides = [
   {
@@ -19,7 +18,7 @@ const slides = [
     desc: 'Talento humano competente para el desarrollo del país.',
   },
   {
-    image: '/images/img3.png',
+    image: 'https://elestudiodeactores.com/wp-content/uploads/2023/04/el-sena-certifica-nuestros-actores.jpeg',
     badge: 'SENA',
     title: 'Unidos por la investigación aplicada',
     desc: 'Conectamos la academia con las realidades del sector productivo.',
@@ -30,6 +29,7 @@ const slides = [
     title: 'Somos entidad de conocimiento',
     desc: 'Inclusión social y desarrollo tecnológico para todos los colombianos.',
   },
+
 ];
 
 const quickCards = [
@@ -76,8 +76,6 @@ const features = [
     description: 'Publica noticias y novedades para toda la comunidad.',
   },
 ];
-
-
 
 function Counter({ value }) {
   const [display, setDisplay] = useState(0);
@@ -224,8 +222,8 @@ export default function Home() {
           administrativa de tu centro de formación.
         </p>
         {user ? (
-          <Link to="/profile" className="btn btn-primary">
-            Mi Perfil
+          <Link to="/dashboard" className="btn btn-primary">
+            Ir al panel
           </Link>
         ) : (
           <Link to="/login" className="btn btn-primary">
@@ -269,65 +267,7 @@ export default function Home() {
       </section>
 
       {/* ── Novedades ── */}
-      <section className="home-section">
-        <div className="section-head">
-          <div>
-            <span className="eyebrow">Comunicación</span>
-            <h2 className="section-title">Novedades</h2>
-            <p className="section-subtitle">
-              Las publicaciones más recientes de la institución.
-            </p>
-          </div>
-          <Link to="/news" className="btn btn-secondary">
-            Ver todas
-          </Link>
-        </div>
-
-        {recentNews.length === 0 ? (
-          <div className="empty-state">Aún no hay novedades publicadas.</div>
-        ) : (
-          <div className="news-preview-grid">
-            {recentNews.map((item) => (
-              <article key={item.id} className="card news-preview-card">
-                <div className="news-preview-media">
-                  {item.imageUrl ? (
-                    <img
-                      src={item.imageUrl}
-                      alt={item.title}
-                      className="news-preview-image"
-                      onError={(e) => {
-                        e.currentTarget.style.display = 'none';
-                      }}
-                    />
-                  ) : (
-                    <img
-                      src="/images/sena1.jpg"
-                      alt={item.title}
-                      className="news-preview-image"
-                    />
-                  )}
-                  {(item.videoUrl || item.videoPath) && (
-                    <span className="news-preview-video-badge">Video</span>
-                  )}
-                </div>
-                <div className="news-preview-body">
-                  <span className="news-preview-date">
-                    {formatDate(item.createdAt)}
-                  </span>
-                  <h3 className="news-preview-title">{item.title}</h3>
-                  <p className="news-preview-excerpt">{excerpt(item.content)}</p>
-                  <Link
-                    to={`/news/${item.id}`}
-                    className="btn btn-secondary btn-sm"
-                  >
-                    Leer más
-                  </Link>
-                </div>
-              </article>
-            ))}
-          </div>
-        )}
-      </section>
+      <NewsPreviews items={recentNews} />
 
       {/* ── Banner institucional ── */}
       <section className="institution-banner">
